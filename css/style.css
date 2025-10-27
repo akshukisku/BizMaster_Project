@@ -948,7 +948,7 @@ nav {
 
 /* footer */
 .footer {
-  background-color: #eaf3ee;
+  background-color: var(--bg-color);
 }
 .social-icons {
   display: flex;
@@ -1009,7 +1009,7 @@ nav {
   /* background: linear-gradient(135deg, #40916c 0%, #2d6a4f 100%); */
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1560,6 +1560,38 @@ nav {
   .solution .text p {
     max-width: 100%;
   }
+  /* works-section */
+  .brands {
+    justify-content: center;
+    gap: 30px;
+    margin-right: 0;
+    margin-top: -20px;
+  }
+
+  .brands img {
+    height: 22px;
+  }
+  /* footer */
+    .footer-section {
+    justify-content: space-around;
+  }
+
+  .footer .col {
+    flex: 1 1 45%;
+    min-width: 45%;
+  }
+
+  .footer-header {
+    font-size: 21px;
+  }
+
+  .footer-para {
+    max-width: 100%;
+  }
+
+  .gallery-grid {
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 768px) {
     .navbar-socials .menu-bar i{
@@ -1650,6 +1682,18 @@ nav {
     font-size: 15px;
     padding: 8px 18px;
   }
+  /* works-section */
+   .brands {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .brands img {
+    height: 20px;
+  }
   /* review */
    .heading-section-2 h2 {
     font-size: 28px;
@@ -1738,6 +1782,7 @@ nav {
   }
   .about-section .row {
     flex-direction: column;
+    margin: 0 10px;
     max-width: 100%;
   }
   .about-section .col {
@@ -1800,102 +1845,45 @@ nav {
     width: 100%;
     margin-bottom: 30px;
   }
-
-  /* footer */
-  .footer .footer-section {
-    flex-direction: column;
+.work-process .heading-section {
+    /* flex-direction: column; */
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
+  }
+  
+  /* footer */
+  .gallery-grid .row{
+    gap: 10px;
+  }
+  .footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
   }
 
   .footer .col {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 
-  /* Footer logo centered */
-  .footer-logo img {
-    max-width: 150px;
-    margin: 0 auto;
+  .footer .container {
+    gap: 40px;
   }
 
-  /* Paragraph and text spacing */
-  .footer-para {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 10px 0 15px;
-  }
-
-  /* Social icons center aligned */
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  /* Contact items center aligned */
-  .contact-item {
-    justify-content: center;
-    text-align: center;
-  }
-
-  /* Useful links */
-  .links-list {
-    padding: 0;
-    margin: 0 auto;
-  }
-  .links-list li {
-    list-style: none;
-    margin-bottom: 10px;
-  }
-
-  /* Gallery grid: 2 items per row */
-  .gallery-grid .row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  .gallery-grid .col-50 {
-    width: 45%;
-  }
-  .gallery-item img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  /* Footer bottom */
   .footer-bottom .container {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-
-  .footer-bottom .copyright {
-    font-size: 13px;
     text-align: center;
   }
 
-  .footer-bottom .footer-links {
-    text-align: center;
-  }
-
-  .footer-bottom .footer-nav {
-    display: flex;
+  .footer-nav {
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
   }
 
-  .footer-bottom .footer-nav li {
-    list-style: none;
+  .footer-header {
+    font-size: 20px;
   }
-
-  .footer-bottom .footer-nav a {
-    font-size: 13px;
-  }
+ /*  */
   .business-section .col {
     width: 100%;
   }
@@ -1961,6 +1949,12 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
+  .latest-service .heading-section {
+    align-items: center;
+  }
+  .heading-section h2 {
+    font-size: 58px;
+  }
   .testimonial-card {
     padding: 25px;
   }
@@ -2070,4 +2064,5 @@ nav {
   .quote-icon {
     display: none;
   }
+  
 }
