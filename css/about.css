@@ -285,11 +285,6 @@ nav {
   padding: 80px 0;
 }
 
-.journey-details .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .journey-details .row {
   display: flex;
@@ -509,17 +504,27 @@ nav {
 .swiper {
   width: 100%;
 }
-
+/* team */
 .team-card {
   text-align: center;
-  background-color: rgb(255, 246, 246);
+  /* padding: 20px 0; */
+  /* background-color: rgb(255, 246, 246); */
+  background-color: #fff;
   border-radius: 16px;
     /* box-shadow: 0 4px 15px rgba(169, 82, 82, 0.1); */
 }
 
 .team-card img {
   width: 100%;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.team-card-text{
+  padding: 10px 0;
+  /* background-color: #0056b3; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .progress-bar {
@@ -630,7 +635,7 @@ nav {
   /* background: linear-gradient(135deg, #40916c 0%, #2d6a4f 100%); */
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -748,9 +753,13 @@ nav {
   }
 
   .journey-details .row .col,
-  .journey-details .row-2 .col-50{
+  .journey-details .row-2 .col{
     width: 100%;
     /* background-color: red; */
+  }
+  .journey-details .boxer{
+    background-color: red;
+    width: 100%;
   }
 
   .journey-header h2 {
@@ -799,6 +808,26 @@ nav {
 
   .progress-bar {
     width: 85%;
+  }
+   .footer-section {
+    justify-content: space-around;
+  }
+
+  .footer .col {
+    flex: 1 1 45%;
+    min-width: 45%;
+  }
+
+  .footer-header {
+    font-size: 21px;
+  }
+
+  .footer-para {
+    max-width: 100%;
+  }
+
+  .gallery-grid {
+    justify-content: flex-start;
   }
   
 }
@@ -860,6 +889,7 @@ nav {
    .journey-details {
     padding: 50px 0;
   }
+
   
 
   .journey-header {
@@ -924,6 +954,38 @@ nav {
 
   .progress-bar {
     width: 90%;
+  }
+  /* foter */
+   .gallery-grid .row{
+    gap: 10px;
+  }
+  .footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer .col {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .footer .container {
+    gap: 40px;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-header {
+    font-size: 20px;
   }
 }
 
