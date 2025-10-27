@@ -83,41 +83,95 @@ img {
 .col-20{
   width: 20%;
 }
+.active {
+  color: var(--hover-color);
+}
 
 /* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  position: -webkit-sticky;
+}
+
+.navbar-logo img {
+  width: 130px;
 }
 
 .navbar-items {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-top: 0;
+}
 .nav-list {
   display: flex;
   gap: 30px;
-  /* background-color: red; */
   padding: 0 20px;
   border-right: 1px solid #111;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list .active {
+  color: var(--hover-color);
 }
 
 .navbar-socials {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  list-style: none;
 }
 
 .navbar-items i {
   font-size: 20px;
   cursor: pointer;
+  color: #111;
 }
 
-.nav-list a:hover {
+.navbar-socials a {
+  transition: 0.3s;
+}
+
+.navbar-socials a:hover i {
   color: var(--hover-color);
 }
+
+/* Menu toggle button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #111;
+}
+
 
 /* Hero section */
 .about-hero {
@@ -350,7 +404,7 @@ nav {
 
 /* Mission, Vision Sections */
 .text-section {
-  background-color: #f0f7f4;
+  /* background-color: #f0f7f4; */
   padding: 0px 30px;
 }
 .text-section h3 {
@@ -437,6 +491,83 @@ nav {
 .boxer:nth-child(2) p{
   max-width: 133px;
 }
+/* team-section */
+
+.team-section {
+  position: relative;
+  /* width: 90%; */
+  /* max-width: 1100px; */
+  /* margin-top: 100px; */
+}
+
+.slider-wrapper {
+  /* background: #fff; */
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.team-card {
+  text-align: center;
+  background-color: rgb(255, 246, 246);
+  border-radius: 16px;
+    /* box-shadow: 0 4px 15px rgba(169, 82, 82, 0.1); */
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background: #eaf3ef;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 10px;
+  background: #085c47;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Position navigation outside */
+.custom-prev, .custom-next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  /* background-color: red; */
+  color: black;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.custom-prev {
+  left: 60px; /* outside left */
+}
+
+.custom-next {
+  right: 60px; /* outside right */
+}
+
+.custom-prev::after, .custom-next::after {
+  font-size: 26px;
+}
+
 
 /* footer */
 .social-icons {
@@ -554,8 +685,154 @@ nav {
   /* margin-bottom: 20px; */
   color: var(--text-color);
 }
+@media screen and (max-width:991px) {
+   .navbar-socials li:nth-child(1) {
+    display: none;
+  }
+  .navbar-items {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-@media (max-width: 768px) {
+  .navbar-items.active {
+    max-height: 500px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 15px 20px;
+  }
+
+  .navbar-socials {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+.journey-details {
+  padding: 80px 0;
+  width: 100%;
+}
+
+  .journey-details .row,
+  .journey-details .row-2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .journey-details .row .col,
+  .journey-details .row-2 .col-50{
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .journey-header h2 {
+    font-size: 38px;
+  }
+
+  .believe-section h3,
+  .text-section h3,
+  .text-part h3 {
+    font-size: 28px;
+  }
+
+  .text-section {
+    padding: 20px;
+  }
+
+  .boxer {
+    padding: 25px 20px;
+  }
+
+  .simple-list li {
+    margin-bottom: 25px;
+  }
+  .slider-wrapper {
+    padding: 30px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+  }
+
+  .custom-prev {
+    left: 5px;
+  }
+
+  .custom-next {
+    right: 5px;
+  }
+
+  .team-card img {
+    border-radius: 10px;
+  }
+
+  .progress-bar {
+    width: 85%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-socials .menu-bar i{
+    display: none;
+    background-color: red;
+  }
+  .navbar-logo img {
+    width: 100px;
+  }
+
+  .navbar-items {
+    top: 60px;
+  }
+
+  .nav-list {
+    padding: 15px 0;
+  }
+
+  .nav-list a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .navbar-socials {
+    gap: 20px;
+    padding: 15px 0;
+  }
+
+  .navbar-items i {
+    font-size: 18px;
+  }
   .card,
   .card.reverse {
     flex-direction: column;
@@ -579,5 +856,146 @@ nav {
 
   .card-text {
     font-size: 13px;
+  }
+   .journey-details {
+    padding: 50px 0;
+  }
+  
+
+  .journey-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .journey-header h2 {
+    font-size: 32px;
+  }
+
+  .journey-text p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .believe-section h3,
+  .text-section h3,
+  .text-part h3 {
+    font-size: 26px;
+  }
+
+  .mission-list,
+  .simple-list li {
+    font-size: 13px;
+  }
+
+  .text-section,
+  .text-part,
+  .believe-section {
+    padding: 20px 15px;
+  }
+  
+   .slider-wrapper {
+    padding: 25px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 38px;
+    height: 38px;
+    top: 50%;
+  }
+
+  .custom-prev {
+    left: 1px;
+  }
+
+  .custom-next {
+    right: 1px;
+  }
+
+  .team-card {
+    border-radius: 12px;
+  }
+
+  .team-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .progress-bar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+    .journey-details {
+    padding: 40px 0;
+  }
+
+  .journey-header h2 {
+    font-size: 28px;
+  }
+
+  .journey-text p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .believe-section h3,
+  .text-section h3,
+  .text-part h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .mission-list,
+  .simple-list li {
+    font-size: 12px;
+  }
+
+  .boxer {
+    padding: 20px 15px;
+    border-radius: 16px;
+  }
+
+  .journey-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .journey-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .slider-wrapper {
+    padding: 20px 15px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 35px;
+    height: 35px;
+    top: 50%;
+  }
+
+  .custom-prev {
+    left: 10px;
+  }
+
+  .custom-next {
+    right: 10px;
+  }
+
+  .team-card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .team-card img {
+    border-radius: 8px;
+  }
+
+  .progress-bar {
+    width: 95%;
   }
 }

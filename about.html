@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BizMaster</title>
-    <link rel="stylesheet" href="./css/about.css" />
+
     <!-- Remixicon CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <!--Favicons  -->
@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/about.css" />
 </head>
 
 <body>
@@ -21,13 +24,16 @@
             <div class="container">
                 <nav>
                     <div class="navbar-logo">
-                        <a href="#"><img src="./images/Homepage/icon-logo.png" alt="icon-logo" />
-                        </a>
+                        <a href="#"><img src="./images/Homepage/icon-logo.png"
+                                alt="icon-logo" /></a>
                     </div>
-                    <div class="navbar-items">
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                    <div class="navbar-items" id="navbarItems">
                         <ul class="nav-list">
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="#" class="active">About Us</a></li>
+                            <li><a href="./about.html" class="active">About Us</a></li>
                             <li><a href="./service.html">Services</a></li>
                             <li><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contact Us</a></li>
@@ -36,9 +42,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-socials">
-                            <li>
-                                <a href="#"><i class="ri-menu-3-line"></i></a>
-                            </li>
+                            <li><a href="#"><i class="ri-menu-3-line" id="menu-bar"></i></a></li>
                             <li>
                                 <a href="#"><i class="ri-facebook-fill"></i></a>
                             </li>
@@ -56,6 +60,7 @@
                 </nav>
             </div>
         </div>
+
     </header>
     <main>
         <section class="about-hero">
@@ -168,6 +173,48 @@
                 </div>
             </div>
         </section>
+        <section class="team-section">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-1.png" alt="Wilson Lid">
+                                <h3>Wilson Lid</h3>
+                                <p>Tech Advisor</p>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-2.png" alt="Jon Wick">
+                                <h3>Jon Wick</h3>
+                                <p>Tech Advisor</p>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <h3>Emrah Kensas</h3>
+                                <p>Tech Advisor</p>
+                            </div>
+                               <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <h3>Emrah Kensas</h3>
+                                <p>Tech Advisor</p>
+                            </div>
+                               <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <h3>Emrah Kensas</h3>
+                                <p>Tech Advisor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-prev"></div>
+                    <div class="swiper-button-next custom-next"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -271,6 +318,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/about.js"></script>
 </body>
 
 </html>

@@ -24,9 +24,9 @@
                         <a href="#"><img src="./images/Homepage/icon-logo.png"
                                 alt="icon-logo" /></a>
                     </div>
-                    <button class="menu-toggle" id="menuToggle">
+                    <div class="menu-toggle" id="menuToggle">
                         <i class="ri-menu-3-line"></i>
-                    </button>
+                    </div>
                     <div class="navbar-items" id="navbarItems">
                         <ul class="nav-list">
                             <li><a href="./index.html">Home</a></li>
@@ -39,7 +39,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-socials">
-                            <li><a href="#" id="menu-bar"><i class="ri-menu-3-line"></i></a></li>
+                            <li><a href="#"><i class="ri-menu-3-line" id="menu-bar"></i></a></li>
                             <li>
                                 <a href="#"><i class="ri-facebook-fill"></i></a>
                             </li>
@@ -378,45 +378,6 @@
         </div>
     </footer>
 </body>
-<script>
-       const menuToggle = document.getElementById('menuToggle');
-        const navbarItems = document.getElementById('navbarItems');
-
-        menuToggle.addEventListener('click', () => {
-            navbarItems.classList.toggle('active');
-            
-            // Change icon
-            const icon = menuToggle.querySelector('i');
-            if (navbarItems.classList.contains('active')) {
-                icon.classList.remove('ri-menu-3-line');
-                icon.classList.add('ri-close-line');
-            } else {
-                icon.classList.remove('ri-close-line');
-                icon.classList.add('ri-menu-3-line');
-            }
-        });
-
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-list a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 991) {
-                    navbarItems.classList.remove('active');
-                    const icon = menuToggle.querySelector('i');
-                    icon.classList.remove('ri-close-line');
-                    icon.classList.add('ri-menu-3-line');
-                }
-            });
-        });
-
-        // Close menu when window is resized above 991px
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 991) {
-                navbarItems.classList.remove('active');
-                const icon = menuToggle.querySelector('i');
-                icon.classList.remove('ri-close-line');
-                icon.classList.add('ri-menu-3-line');
-            }
-        });
-</script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/service.js"></script>
 </html>

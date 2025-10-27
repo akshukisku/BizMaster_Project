@@ -84,12 +84,10 @@ img {
 
 /* Navbar */
 .navbar {
-  position: sticky;
-  top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
 nav {
@@ -97,19 +95,28 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  position: -webkit-sticky;
 }
 
 .navbar-logo img {
   width: 130px;
 }
 
-/* Default Navbar */
 .navbar-items {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-top: 0;
+}
 .nav-list {
   display: flex;
   gap: 30px;
@@ -775,15 +782,15 @@ height: 12px;
 }
 
 @media (max-width: 991px) {
-  .navbar-socials .menu-bar{
-    /* display: none; */
-    background-color: red;
+  .navbar-socials li:nth-child(1) {
+    display: none;
   }
   .navbar-items {
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: 0;
     width: 100%;
+    z-index: 11;
     background-color: #fff;
     flex-direction: column;
     gap: 0;
@@ -836,6 +843,38 @@ height: 12px;
 
   .latest-service .service-card {
     margin: 20px 0;
+  }
+    .great-cards .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .great-section .col {
+    width: 100%;
+  }
+
+  .left {
+    border-radius: 20px 20px 0 0;
+    padding: 35px;
+  }
+
+  .right {
+    border-radius: 0 0 20px 20px;
+    flex-direction: column;
+    padding: 35px;
+  }
+
+  .avatars {
+    justify-content: center;
+  }
+
+  .clients p {
+    font-size: 14px;
+  }
+
+  .learn-btn {
+    margin-top: 15px;
   }
 }
 
@@ -908,4 +947,5 @@ height: 12px;
   width: 100%;
   height: 100%;
 }
+
 }

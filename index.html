@@ -21,29 +21,43 @@
             <div class="container">
                 <nav>
                     <div class="navbar-logo">
-                        <a href="#"><img src="./images/Homepage/icon-logo.png" alt="icon-logo">
-                        </a>
+                        <a href="#"><img src="./images/Homepage/icon-logo.png"
+                                alt="icon-logo" /></a>
                     </div>
-                    <div class="navbar-items">
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                    <div class="navbar-items" id="navbarItems">
                         <ul class="nav-list">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html" class="active">Home</a></li>
                             <li><a href="./about.html">About Us</a></li>
-                            <li><a href="./service.html">Services</a></li>
+                            <li><a href="./service.html" >Services</a></li>
                             <li><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contact Us</a></li>
-                            <li><a href="#"><i class="ri-search-line"></i></a></li>
+                            <li>
+                                <a href="#"><i class="ri-search-line"></i></a>
+                            </li>
                         </ul>
                         <ul class="navbar-socials">
-                            <li><a href="#"><i class="ri-menu-3-line"></i></a></li>
-                            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
-                            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
-                            <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
-                            <li><a href="#"><i class="ri-whatsapp-fill"></i></a></li>
+                            <li><a href="#"><i class="ri-menu-3-line" id="menu-bar"></i></a></li>
+                            <li>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
+
     </header>
     <main>
         <section class="banner-section">
@@ -196,12 +210,12 @@
                 <div class="col col-50">
                     <div class="about-card">
                         <p class="about-tag"><i class="ri-send-plane-fill"></i> About Us</p>
-                        <h4>Achieve Your a <br> of Business</h4>
+                        <h2>Achieve Your a <br> of Business</h2>
 
                         <div class="solution">
                             <div class="tick"><i class="ri-check-line"></i></div>
                             <div class="text">
-                                <h4>Strategic Solutions Pro</h4>
+                                <h3>Strategic Solutions Pro</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Cras vel lobortis massa. Donec accumsan urna in leo consequat.</p>
                             </div>
@@ -209,7 +223,7 @@
                         <div class="solution">
                             <div class="tick"><i class="ri-check-line"></i></div>
                             <div class="text">
-                                <h4>Strategic Solutions Pro</h4>
+                                <h3>Strategic Solutions Pro</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Cras vel lobortis massa. Donec accumsan urna in leo consequat.</p>
                             </div>
@@ -218,7 +232,9 @@
                     </div>
                 </div>
                 <div class="col col-50 image-col">
-                    <img src="./images/Homepage/business-woman.png" alt="Business Woman">
+                    <figure>
+                        <img src="./images/Homepage/business-woman.png" alt="Business Woman">
+                    </figure>
                 </div>
             </div>
         </section>
@@ -318,63 +334,87 @@
                 </div>
             </div>
         </section>
-        <section class="goal-section">
+        <section class="goal-section section-padding">
             <div class="container">
-                <div class="row">
-                    <!-- Left side heading -->
-                    <div class="col col-40">
-                        <h2>Partnering Business<br>for Success</h2>
-                        <button class="btn">Program</button>
+                 <div class="curve-icon">
+                        <figure>
+                            <img src="./images/Homepage/growth-graph 1.svg" alt="growth-graph">
+                        </figure>
+                        <p>Our Goal</p>
+                    </div>
+                <div class="header-section">
+                    <div class="header-left">
+                        <h2>Partnering Business for Success</h2>
+                        <div class="program-btn">Program</div>
+                    </div>
+                    <div class="header-right">
+                        <p class="header-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dras vel lobortis massa. Donec
+                            accumsan urna
+                            tellus consequat, vitae fermentum turpis tincidunt. At
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="left-sidebar">
+                        <p class="sidebar-item">Lorem Ipsum</p>
+                        <p class="sidebar-item">Lorem Ipsum</p>
+                        <p class="sidebar-item">Lorem Ipsum</p>
                     </div>
 
-                    <!-- Right side content -->
-                    <div class="col col-60">
-                        <p class="intro-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel lobortis massa.
-                            Donec accumsan urna in leo consequat, vitae fermentum turpis tincidunt.
-                        </p>
+                    <div class="cards-section">
+                        <div class="services-wrapper">
+                            <div class="service-row">
+                                <div class="service-card-1">
+                                    <div class="card-header">
+                                        <span class="dot"></span>
+                                        <h3 class="card-title">Sustainable Development Partners</h3>
+                                    </div>
+                                    <p class="card-subtitle">Strategic Solutions for:</p>
+                                    <ul class="feature-list">
+                                        <li>Market Expansion</li>
+                                        <li>Value-Driven Growth</li>
+                                    </ul>
+                                </div>
 
-                        <div class="solutions-grid">
-                            <!-- Column 1 -->
-                            <div class="solution-box">
-                                <div class="dot"></div>
-                                <h3>Sustainable Development Partners</h3>
-                                <p class="subtitle">Strategic Solutions for:</p>
-                                <ul>
-                                    <li>Market Expansion</li>
-                                    <li>Value-Driven Growth</li>
-                                </ul>
+                                <div class="service-card-1">
+                                    <div class="card-header">
+                                        <span class="dot"></span>
+                                        <h3 class="card-title">Operational Excellence Solutions</h3>
+                                    </div>
+                                    <p class="card-subtitle">Process Design & Workshops</p>
+                                    <ul class="feature-list">
+                                        <li>Performance Optimization</li>
+                                        <li>Workflow Innovation</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="solution-box">
-                                <div class="dot"></div>
-                                <h3>Management Mastery Toolkit</h3>
-                                <p class="subtitle">Productivity Maximization</p>
-                                <ul>
-                                    <li>Team Alignment</li>
-                                    <li>Leadership Best Practices</li>
-                                </ul>
-                            </div>
+                            <div class="service-row">
+                                <div class="service-card-1">
+                                    <div class="card-header">
+                                        <span class="dot"></span>
+                                        <h3 class="card-title">Management Mastery Toolkit</h3>
+                                    </div>
+                                    <p class="card-subtitle">Productivity Maximization</p>
+                                    <ul class="feature-list">
+                                        <li>Team Alignment</li>
+                                        <li>Leadership Best Practices</li>
+                                    </ul>
+                                </div>
 
-                            <!-- Column 2 -->
-                            <div class="solution-box">
-                                <div class="dot"></div>
-                                <h3>Operational Excellence Solutions</h3>
-                                <p class="subtitle">Process Design & Workshops</p>
-                                <ul>
-                                    <li>Performance Optimization</li>
-                                    <li>Workflow Innovation</li>
-                                </ul>
-                            </div>
-
-                            <div class="solution-box">
-                                <div class="dot"></div>
-                                <h3>Transformation Strategy</h3>
-                                <p class="subtitle">Efficiency Upgrades</p>
-                                <ul>
-                                    <li>Business Agility</li>
-                                    <li>Future-Ready Operations</li>
-                                </ul>
+                                <div class="service-card-1">
+                                    <div class="card-header">
+                                        <span class="dot"></span>
+                                        <h3 class="card-title">Transformation Strategy</h3>
+                                    </div>
+                                    <p class="card-subtitle">Efficiency Upgrades</p>
+                                    <ul class="feature-list">
+                                        <li>Business Agility</li>
+                                        <li>Future Ready Planning</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1075,4 +1115,6 @@
     </footer>
 </body>
 
+<script src="./js/jquery.min.js"></script>
+<script src="./js/script.js"></script>
 </html>
