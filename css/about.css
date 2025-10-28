@@ -572,7 +572,43 @@ nav {
 .custom-prev::after, .custom-next::after {
   font-size: 26px;
 }
+/*  */
 
+
+.testimonial-section .container {
+  /* width: 90%; */
+  /* max-width: 900px; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Each box */
+.testimonial-box {
+  background-color: #e8f3ee; /* light green shade */
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings & text */
+.testimonial-box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.testimonial-box p {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
+  /* max-width: 700px; */
+  margin: 0 auto;
+}
 
 /* footer */
 .social-icons {
@@ -741,25 +777,20 @@ nav {
     display: block;
   }
 
-.journey-details {
-  padding: 80px 0;
-  width: 100%;
-}
-
-  .journey-details .row,
-  .journey-details .row-2 {
-    flex-direction: column;
-    gap: 30px;
+  .journey-details {
+    padding: 60px 0;
   }
 
-  .journey-details .row .col,
-  .journey-details .row-2 .col{
-    width: 100%;
-    /* background-color: red; */
+  .journey-details .row {
+    flex-wrap: wrap;
+    gap: 25px;
   }
-  .journey-details .boxer{
-    background-color: red;
+
+  .journey-details .col-50,
+  .journey-details .col-40 {
+    max-width: 100%;
     width: 100%;
+    margin: 0 10px;
   }
 
   .journey-header h2 {
@@ -772,16 +803,14 @@ nav {
     font-size: 28px;
   }
 
-  .text-section {
-    padding: 20px;
+  .journey-text p,
+  .text-part p,
+  .mission-list p {
+    font-size: 13px;
   }
 
   .boxer {
-    padding: 25px 20px;
-  }
-
-  .simple-list li {
-    margin-bottom: 25px;
+    padding: 30px 25px;
   }
   .slider-wrapper {
     padding: 30px;
@@ -809,6 +838,28 @@ nav {
   .progress-bar {
     width: 85%;
   }
+  /*  */
+    .testimonial-section {
+    /* width: 95%; */
+    padding: 30px 0;
+    gap: 25px;
+    margin: 0 20px;
+  }
+
+  .testimonial-box {
+    padding: 30px 15px;
+    border-radius: 10px;
+    /* margin: 0 20px; */
+  }
+
+  .testimonial-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-box p {
+    font-size: 0.85rem;
+  }
+  /*  */
    .footer-section {
     justify-content: space-around;
   }
@@ -886,42 +937,48 @@ nav {
   .card-text {
     font-size: 13px;
   }
-   .journey-details {
+  .journey-details {
     padding: 50px 0;
   }
 
-  
+  .journey-details .row,
+  .journey-details .row-2 {
+    flex-direction: column;
+    gap: 30px;
+  }
 
   .journey-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
   }
 
   .journey-header h2 {
     font-size: 32px;
   }
 
-  .journey-text p {
-    font-size: 13px;
-    max-width: 100%;
+  .believe-section,
+  .text-section,
+  .text-part {
+    text-align: left;
   }
 
-  .believe-section h3,
-  .text-section h3,
-  .text-part h3 {
-    font-size: 26px;
+  .believe-item {
+    align-items: center;
   }
 
-  .mission-list,
+  .believe-text p,
+  .mission-list p,
   .simple-list li {
     font-size: 13px;
   }
 
-  .text-section,
-  .text-part,
-  .believe-section {
-    padding: 20px 15px;
+  .boxer {
+    padding: 25px 20px;
+  }
+
+  .simple-list li {
+    margin-bottom: 25px;
   }
   
    .slider-wrapper {
@@ -990,44 +1047,55 @@ nav {
 }
 
 @media (max-width: 576px) {
-    .journey-details {
+  .journey-details {
     padding: 40px 0;
   }
 
+  .journey-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .journey-details .row-2 .col{
+    margin: 0 10px;
+    max-width: 350px;
+  }
   .journey-header h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
-  .journey-text p {
-    font-size: 12px;
-    line-height: 1.7;
+  .journey-icon {
+    width: 36px;
+    height: 36px;
   }
 
   .believe-section h3,
   .text-section h3,
   .text-part h3 {
     font-size: 22px;
-    margin-bottom: 15px;
   }
 
-  .mission-list,
+  .journey-text p,
+  .text-part p,
+  .mission-list p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .mission-container,
+  .simple-list {
+    padding-left: 10px;
+  }
+
   .simple-list li {
     font-size: 12px;
+    margin-bottom: 20px;
   }
 
   .boxer {
-    padding: 20px 15px;
-    border-radius: 16px;
-  }
-
-  .journey-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .journey-icon img {
-    width: 20px;
-    height: 20px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    /* background-color: red; */
+    /* margin: 0 10px; */
   }
   .slider-wrapper {
     padding: 20px 15px;
@@ -1059,5 +1127,19 @@ nav {
 
   .progress-bar {
     width: 95%;
+  }
+}
+
+@media screen and (max-width:400px) {
+#boxing{
+  /* background-color: red; */
+  margin-right: 17px;
+  max-width: 370px;
+}
+    .journey-details .row-2 .col{
+      /* background-color: rebeccapurple; */
+    margin: 0 10px;
+    max-width: 290px;
+    margin-left: 18px;
   }
 }

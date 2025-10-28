@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BizMaster</title>
-    <link rel="stylesheet" href="./css/style.css">
+
     <!-- Remixicon CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <!--Favicons  -->
@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,8 +24,7 @@
             <div class="container">
                 <nav>
                     <div class="navbar-logo">
-                        <a href="#"><img src="./images/Homepage/icon-logo.png"
-                                alt="icon-logo" /></a>
+                        <a href="#"><img src="./images/Homepage/icon-logo.png" alt="icon-logo" /></a>
                     </div>
                     <div class="menu-toggle" id="menuToggle">
                         <i class="ri-menu-3-line"></i>
@@ -31,7 +33,7 @@
                         <ul class="nav-list">
                             <li><a href="./index.html" class="active">Home</a></li>
                             <li><a href="./about.html">About Us</a></li>
-                            <li><a href="./service.html" >Services</a></li>
+                            <li><a href="./service.html">Services</a></li>
                             <li><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contact Us</a></li>
                             <li>
@@ -336,12 +338,12 @@
         </section>
         <section class="goal-section section-padding">
             <div class="container">
-                 <div class="curve-icon">
-                        <figure>
-                            <img src="./images/Homepage/growth-graph 1.svg" alt="growth-graph">
-                        </figure>
-                        <p>Our Goal</p>
-                    </div>
+                <div class="curve-icon">
+                    <figure>
+                        <img src="./images/Homepage/growth-graph 1.svg" alt="growth-graph">
+                    </figure>
+                    <p>Our Goal</p>
+                </div>
                 <div class="header-section">
                     <div class="header-left">
                         <h2>Partnering Business for Success</h2>
@@ -433,7 +435,6 @@
                     <h2>Transform Business with Guidance</h2>
                 </div>
                 <div class="row">
-                    <!-- Card 1 -->
                     <div class="col col-50">
                         <div class="advisor-card">
                             <figure>
@@ -450,8 +451,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
                     <div class="col col-50">
                         <div class="advisor-card">
                             <figure>
@@ -470,7 +469,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Card 3 -->
                     <div class="col col-50">
                         <div class="advisor-card">
                             <figure>
@@ -826,6 +824,64 @@
                 </div>
             </div>
         </section>
+        <section class="team-section">
+            <div class="container">
+                <div class="heading-section">
+                    <div class="curve-icon">
+                        <figure>
+                            <img src="./images/Homepage/growth-graph 1.svg" alt="growth-graph">
+                        </figure>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <h2>Your Business with the Professional</h2>
+                </div>
+                <div class="slider-wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-1.png" alt="Wilson Lid">
+                                <div class="team-card-text">
+                                    <h3>Wilson Lid</h3>
+                                    <p>Tech Advisor</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-2.png" alt="Jon Wick">
+                                <div class="team-card-text">
+                                    <h3>Jon Wick</h3>
+                                    <p>Tech Advisor</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <div class="team-card-text">
+                                    <h3>Emrah Kensas</h3>
+                                    <p>Tech Advisor</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <div class="team-card-text">
+                                    <h3>Emrah Kensas</h3>
+                                    <p>Tech Advisor</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-card">
+                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
+                                <div class="team-card-text">
+                                    <h3>Emrah Kensas</h3>
+                                    <p>Tech Advisor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-prev"></div>
+                    <div class="swiper-button-next custom-next"></div>
+                </div>
+            </div>
+        </section>
         <section class="innovation-section">
             <div class="container">
                 <div class="row">
@@ -1114,7 +1170,8 @@
         </div>
     </footer>
 </body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/script.js"></script>
+
 </html>

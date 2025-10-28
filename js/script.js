@@ -1,3 +1,24 @@
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
+  },
+  on: {
+    slideChange: function () {
+      const progress = document.querySelector('.progress');
+      const totalSlides = this.slides.length - this.params.slidesPerView + 1;
+      const currentIndex = this.activeIndex + 1;
+      const percentage = (currentIndex / totalSlides) * 100;
+      progress.style.width = percentage + '%';
+    },
+  },
+});
+
+
+
+
 $(document).ready(function () {
   const $menuToggle = $("#menuToggle");
   const $navbarItems = $("#navbarItems");
