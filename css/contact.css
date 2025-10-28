@@ -148,10 +148,10 @@ nav {
 .navbar-socials a {
   transition: 0.3s;
 }
-
+/* 
 .navbar-socials a:hover i {
   color: var(--hover-color);
-}
+} */
 
 /* Menu toggle button */
 .menu-toggle {

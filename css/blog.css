@@ -152,9 +152,9 @@ nav {
   transition: 0.3s;
 }
 
-.navbar-socials a:hover i {
+/* .navbar-socials a:hover i {
   color: var(--hover-color);
-}
+} */
 
 /* Menu toggle button */
 .menu-toggle {

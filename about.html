@@ -1,351 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BizMaster</title>
 
     <!-- Remixicon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!--Favicons  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/about.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <nav>
-                    <div class="navbar-logo">
-                        <a href="#"><img src="./images/Homepage/icon-logo.png" alt="icon-logo" /></a>
-                    </div>
-                    <div class="menu-toggle" id="menuToggle">
-                        <i class="ri-menu-3-line"></i>
-                    </div>
-                    <div class="navbar-items" id="navbarItems">
-                        <ul class="nav-list">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html" class="active">About Us</a></li>
-                            <li><a href="./service.html">Services</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact Us</a></li>
-                            <li>
-                                <a href="#"><i class="ri-search-line"></i></a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-socials">
-                            <li><a href="#"><i class="ri-menu-3-line" id="menu-bar"></i></a></li>
-                            <li>
-                                <a href="#"><i class="ri-facebook-fill"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ri-twitter-fill"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ri-linkedin-fill"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ri-whatsapp-fill"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+      <div class="navbar">
+        <div class="container">
+          <nav>
+            <div class="navbar-logo">
+              <a href="#"
+                ><img src="./images/Homepage/icon-logo.png" alt="icon-logo"
+              /></a>
             </div>
+            <div class="menu-toggle" id="menuToggle">
+              <i class="ri-menu-3-line"></i>
+            </div>
+            <div class="navbar-items" id="navbarItems">
+              <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <a href="#"><i class="ri-search-line"></i></a>
+                </li>
+              </ul>
+              <ul class="navbar-socials">
+                <li>
+                  <a href="#"><i class="ri-menu-3-line" id="menu-bar"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-
+      </div>
     </header>
     <main>
-        <section class="about-hero">
-            <h1>About Us</h1>
-            <nav class="breadcrumb">
-                <a href="./index.html">Home</a>
-                <i class="ri-arrow-drop-right-line"></i>
-                <span>About Us</span>
-            </nav>
-        </section>
-        <section class="journey-details section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-50">
-                        <div class="journey-header">
-                            <div class="journey-icon">
-                                <img src="./images/about/book-icon.svg" alt="book-icon">
-                            </div>
-                            <h2>Our Journey</h2>
-                        </div>
-                        <div class="journey-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis velit neque. Integer ac
-                                lorem a mi lobortis cursus non sit amet velit. Phasellus elit enim, ullamcorper et felis
-                                sit amet, aliquet sagittis felis. Ut pharetra nisl nec mauris sodales sollicitudin.</p>
-                        </div>
-                    </div>
-                    <div class="col col-50">
-                        <div class="believe-section boxer" id="boxing">
-                            <h3>What We Believe In</h3>
-
-                            <ul class="believe-list">
-                                <li class="believe-item">
-                                    <div class="believe-icon">
-                                        <img src="./images/about/about-icon-1.svg" alt="about-icon-1">
-                                    </div>
-                                    <div class="believe-text">
-                                        <p>Partnership First Collaboration is at the heart of everything.</p>
-                                    </div>
-                                </li>
-
-                                <li class="believe-item">
-                                    <div class="believe-icon">
-                                        <img src="./images/about/about-icon-2.svg" alt="about-icon-2">
-                                    </div>
-                                    <div class="believe-text">
-                                        <p>Driven Solution We prioritize outcomes, deliverables.</p>
-                                    </div>
-                                </li>
-
-                                <li class="believe-item">
-                                    <div class="believe-icon">
-                                        <img src="./images/about/about-icon-3.svg" alt="about-icon-3">
-                                    </div>
-                                    <div class="believe-text">
-                                        <p>Powered by data, guided by creativity.</p>
-                                    </div>
-                                </li>
-
-                                <li class="believe-item">
-                                    <div class="believe-icon">
-                                        <img src="./images/about/about-icon-4.svg" alt="about-icon-4">
-                                    </div>
-                                    <div class="believe-text">
-                                        <p>We build foundations for long-term success.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-2">
-                    <div class="col col-50 boxer">
-                        <div class="text-section">
-                            <h3>Our Mission</h3>
-                            <ul class="mission-container">
-                                <li class="mission-list">
-                                    <p>Deliver innovative solutions</p>
-                                </li>
-                                <li class="mission-list">
-                                    <p>Ensure scalability to support business growth</p>
-                                </li>
-                                <li class="mission-list">
-                                    <p>Focus on people-centric approaches</p>
-                                </li>
-                                <li class="mission-list">
-                                    <p>Drive sustainable growth over time</p>
-                                </li>
-                                <li class="mission-list">
-                                    <p>Achieve measurable success through actionable results</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-40 boxer">
-                        <div class="text-part">
-                            <h3>Our Vision</h3>
-                            <p>To be a trusted global partner for businesses seeking transformation, innovation, and
-                                excellence every step of their journey.</p>
-                        </div>
-                    </div>
-                    <div class="col col-40 boxer">
-                        <ul class="simple-list">
-                            <li>Established in [Year]</li>
-                            <li>250+ Projects Delivered</li>
-                            <li>Clients in 15+ Countries</li>
-                            <li>Award-winning Design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-section">
-            <div class="container">
-                <div class="slider-wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide team-card">
-                                <img src="./images/about/a-1.png" alt="Wilson Lid">
-                                <div class="team-card-text">
-                                    <h3>Wilson Lid</h3>
-                                    <p>Tech Advisor</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team-card">
-                                <img src="./images/about/a-2.png" alt="Jon Wick">
-                                <div class="team-card-text">
-                                    <h3>Jon Wick</h3>
-                                    <p>Tech Advisor</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team-card">
-                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
-                                <div class="team-card-text">
-                                    <h3>Emrah Kensas</h3>
-                                    <p>Tech Advisor</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team-card">
-                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
-                                <div class="team-card-text">
-                                    <h3>Emrah Kensas</h3>
-                                    <p>Tech Advisor</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide team-card">
-                                <img src="./images/about/a-3.png" alt="Emrah Kensas">
-                                <div class="team-card-text">
-                                    <h3>Emrah Kensas</h3>
-                                    <p>Tech Advisor</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev custom-prev"></div>
-                    <div class="swiper-button-next custom-next"></div>
-                </div>
-            </div>
-        </section>
-        <section class="testimonial-section">
+      <section class="about-hero">
+        <h1>About Us</h1>
+        <nav class="breadcrumb">
+          <a href="./index.html">Home</a>
+          <i class="ri-arrow-drop-right-line"></i>
+          <span>About Us</span>
+        </nav>
+      </section>
+      <section class="journey-details section-padding">
         <div class="container">
-                <div class="testimonial-box">
-                <h2>Hear From Our Clients</h2>
+          <div class="row">
+            <div class="col col-50">
+              <div class="journey-header">
+                <div class="journey-icon">
+                  <img src="./images/about/book-icon.svg" alt="book-icon" />
+                </div>
+                <h2>Our Journey</h2>
+              </div>
+              <div class="journey-text">
                 <p>
-                    The team completely changed how we do business. Their guidance was
-                    practical, effective, and exactly what we needed.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  quis velit neque. Integer ac lorem a mi lobortis cursus non
+                  sit amet velit. Phasellus elit enim, ullamcorper et felis sit
+                  amet, aliquet sagittis felis. Ut pharetra nisl nec mauris
+                  sodales sollicitudin.
                 </p>
+              </div>
             </div>
-            <div class="testimonial-box">
-                <h2>Join the Transformation</h2>
+            <div class="col col-50">
+              <div class="believe-section boxer" id="boxing">
+                <h3>What We Believe In</h3>
+
+                <ul class="believe-list">
+                  <li class="believe-item">
+                    <div class="believe-icon">
+                      <img
+                        src="./images/about/about-icon-1.svg"
+                        alt="about-icon-1"
+                      />
+                    </div>
+                    <div class="believe-text">
+                      <p>
+                        Partnership First Collaboration is at the heart of
+                        everything.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="believe-item">
+                    <div class="believe-icon">
+                      <img
+                        src="./images/about/about-icon-2.svg"
+                        alt="about-icon-2"
+                      />
+                    </div>
+                    <div class="believe-text">
+                      <p>
+                        Driven Solution We prioritize outcomes, deliverables.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="believe-item">
+                    <div class="believe-icon">
+                      <img
+                        src="./images/about/about-icon-3.svg"
+                        alt="about-icon-3"
+                      />
+                    </div>
+                    <div class="believe-text">
+                      <p>Powered by data, guided by creativity.</p>
+                    </div>
+                  </li>
+
+                  <li class="believe-item">
+                    <div class="believe-icon">
+                      <img
+                        src="./images/about/about-icon-4.svg"
+                        alt="about-icon-4"
+                      />
+                    </div>
+                    <div class="believe-text">
+                      <p>We build foundations for long-term success.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row row-2">
+            <div class="col col-50 boxer">
+              <div class="text-section">
+                <h3>Our Mission</h3>
+                <ul class="mission-container">
+                  <li class="mission-list">
+                    <p>Deliver innovative solutions</p>
+                  </li>
+                  <li class="mission-list">
+                    <p>Ensure scalability to support business growth</p>
+                  </li>
+                  <li class="mission-list">
+                    <p>Focus on people-centric approaches</p>
+                  </li>
+                  <li class="mission-list">
+                    <p>Drive sustainable growth over time</p>
+                  </li>
+                  <li class="mission-list">
+                    <p>Achieve measurable success through actionable results</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-40 boxer">
+              <div class="text-part">
+                <h3>Our Vision</h3>
                 <p>
-                    This team completely changed how we do business. Their guidance was
-                    practical, effective, and exactly what we needed.
+                  To be a trusted global partner for businesses seeking
+                  transformation, innovation, and excellence every step of their
+                  journey.
                 </p>
+              </div>
             </div>
+            <div class="col col-40 boxer">
+              <ul class="simple-list">
+                <li>Established in [Year]</li>
+                <li>250+ Projects Delivered</li>
+                <li>Clients in 15+ Countries</li>
+                <li>Award-winning Design</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        </section>
+      </section>
+      <section class="team-section">
+        <div class="container">
+          <div class="slider-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide team-card">
+                  <img src="./images/about/a-1.png" alt="Wilson Lid" />
+                  <div class="team-card-text">
+                    <h3>Wilson Lid</h3>
+                    <p>Tech Advisor</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team-card">
+                  <img src="./images/about/a-2.png" alt="Jon Wick" />
+                  <div class="team-card-text">
+                    <h3>Jon Wick</h3>
+                    <p>Tech Advisor</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team-card">
+                  <img src="./images/about/a-3.png" alt="Emrah Kensas" />
+                  <div class="team-card-text">
+                    <h3>Emrah Kensas</h3>
+                    <p>Tech Advisor</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team-card">
+                  <img src="./images/about/a-3.png" alt="Emrah Kensas" />
+                  <div class="team-card-text">
+                    <h3>Emrah Kensas</h3>
+                    <p>Tech Advisor</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team-card">
+                  <img src="./images/about/a-3.png" alt="Emrah Kensas" />
+                  <div class="team-card-text">
+                    <h3>Emrah Kensas</h3>
+                    <p>Tech Advisor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev custom-prev"></div>
+            <div class="swiper-button-next custom-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="testimonial-box">
+            <h2>Hear From Our Clients</h2>
+            <p>
+              The team completely changed how we do business. Their guidance was
+              practical, effective, and exactly what we needed.
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <h2>Join the Transformation</h2>
+            <p>
+              This team completely changed how we do business. Their guidance
+              was practical, effective, and exactly what we needed.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
+      <div class="container">
+        <div class="row footer-section">
+          <div class="col col-25">
+            <div class="footer-logo">
+              <a href="#"
+                ><img
+                  src="./images/Homepage/icon-logo.png"
+                  alt="icon-logo-white"
+              /></a>
+            </div>
+            <p class="footer-para">
+              We provide a full range of digital marketing and innovation
+              services that help businesses grow and stay ahead.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+          <div class="col col-25">
+            <p class="footer-header">Contact</p>
+            <div class="contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>1012/A Maymuna Road, Jikorghio, DM<br />United States</span>
+            </div>
+            <div class="contact-item">
+              <i class="ri-phone-line"></i>
+              <span>+1 800 603 6080</span>
+            </div>
+            <div class="contact-item">
+              <i class="ri-mail-line"></i>
+              <span>mail@domain.org</span>
+            </div>
+            <div class="contact-item">
+              <span
+                >Open hours:<br />Monday-Friday (9:00-17:00)<br />Saturday
+                (10:00-18:00)</span
+              >
+            </div>
+          </div>
+          <div class="col col-25">
+            <p class="footer-header">Useful Links</p>
+            <ul class="links-list">
+              <li><a href="#">Appointment Booking</a></li>
+              <li><a href="#">Doctor's Timetable</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col col-25">
+            <p class="footer-header">Latest gallery</p>
+            <div class="gallery-grid">
+              <div class="row">
+                <div class="col col-50">
+                  <div class="gallery-item">
+                    <figure>
+                      <img src="./images/Homepage/gallery-item-1.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+                <div class="col col-50">
+                  <div class="gallery-item">
+                    <figure>
+                      <img src="./images/Homepage/gallery-item-2.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-50">
+                  <div class="gallery-item">
+                    <figure>
+                      <img
+                        src="./images/Homepage/gallery-item-3.png"
+                        alt="gallery-item-3"
+                      />
+                    </figure>
+                  </div>
+                </div>
+                <div class="col col-50">
+                  <div class="gallery-item">
+                    <figure>
+                      <img
+                        src="./images/Homepage/gallery-item-4.png"
+                        alt="gallery-item-4"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row footer-section">
-                <div class="col col-25">
-                    <div class="footer-logo">
-                        <a href="#"><img src="./images/Homepage/icon-logo.png" alt="icon-logo-white" /></a>
-                    </div>
-                    <p class="footer-para">
-                        We provide a full range of digital marketing and innovation
-                        services that help businesses grow and stay ahead.
-                    </p>
-                    <div class="social-icons">
-                        <a href="#"><i class="ri-youtube-fill"></i></a>
-                        <a href="#"><i class="ri-facebook-fill"></i></a>
-                        <a href="#"><i class="ri-twitter-fill"></i></a>
-                        <a href="#"><i class="ri-instagram-fill"></i></a>
-                    </div>
-                </div>
-                <div class="col col-25">
-                    <p class="footer-header">Contact</p>
-                    <div class="contact-item">
-                        <i class="ri-map-pin-line"></i>
-                        <span>1012/A Maymuna Road, Jikorghio, DM<br />United States</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="ri-phone-line"></i>
-                        <span>+1 800 603 6080</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="ri-mail-line"></i>
-                        <span>mail@domain.org</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>Open hours:<br />Monday-Friday (9:00-17:00)<br />Saturday
-                            (10:00-18:00)</span>
-                    </div>
-                </div>
-                <div class="col col-25">
-                    <p class="footer-header">Useful Links</p>
-                    <ul class="links-list">
-                        <li><a href="#">Appointment Booking</a></li>
-                        <li><a href="#">Doctor's Timetable</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
-                </div>
-                <div class="col col-25">
-                    <p class="footer-header">Latest gallery</p>
-                    <div class="gallery-grid">
-                        <div class="row">
-                            <div class="col col-50">
-                                <div class="gallery-item">
-                                    <figure>
-                                        <img src="./images/Homepage/gallery-item-1.png" alt="" />
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col col-50">
-                                <div class="gallery-item">
-                                    <figure>
-                                        <img src="./images/Homepage/gallery-item-2.png" alt="" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-50">
-                                <div class="gallery-item">
-                                    <figure>
-                                        <img src="./images/Homepage/gallery-item-3.png" alt="gallery-item-3" />
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col col-50">
-                                <div class="gallery-item">
-                                    <figure>
-                                        <img src="./images/Homepage/gallery-item-4.png" alt="gallery-item-4" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="copyright">
+            <a href="#">
+              <i class="ri-copyright-line"></i>
+              <span>Copyright 2025 All Rights Reserved</span></a
+            >
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright">
-                    <a href="#">
-                        <i class="ri-copyright-line"></i>
-                        <span>Copyright 2025 All Rights Reserved</span></a>
-                </div>
-                <div class="footer-links">
-                    <ul class="footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/about.js"></script>
-</body>
-
+  </body>
 </html>
