@@ -207,6 +207,9 @@ nav {
 .breadcrumb span {
   color: rgba(255, 255, 255, 0.7);
 }
+.breadcrumb i{
+  font-size: 30px;
+}
 /* contact-sesssion */
 /* =======================
    CONTACT SECTION
@@ -405,6 +408,7 @@ textarea {
   gap: 12px;
   padding: 20px 0;
   color: #555;
+  cursor: pointer;
 }
 /* footer */
 .footer-para {
@@ -412,8 +416,8 @@ textarea {
 }
 .contact-item i {
   color: #40916c;
-  font-size: 20px;
-  margin-top: 3px;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
 .links-list {

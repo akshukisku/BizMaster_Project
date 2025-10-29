@@ -719,8 +719,9 @@ nav {
 .team-section {
   position: relative;
   /* width: 90%; */
-  /* max-width: 1100px; */
-  /* margin-top: 100px; */
+  /* background-color: red; */
+  margin-bottom: -160px;
+  z-index: 999;
 }
 .team-section .heading-section h2 {
   /* background-color: red; */
@@ -839,7 +840,7 @@ nav {
 .card-arrow i {
   font-size: 40px;
   color: var(--arrow-color);
-  display: inline-block; 
+  display: inline-block;
 }
 .card-arrow:hover i {
   transform: rotate(45deg) scale(1.1);
@@ -1066,6 +1067,7 @@ nav {
   gap: 12px;
   padding: 20px 0;
   color: #555;
+  cursor: pointer;
 }
 
 .footer-para {
@@ -1073,8 +1075,9 @@ nav {
 }
 .contact-item i {
   color: #40916c;
-  font-size: 20px;
-  margin-top: 3px;
+  font-size: 25px;
+  /* margin-top: 3px; */
+  padding-bottom: 10px;
 }
 
 .links-list {
@@ -1192,8 +1195,10 @@ nav {
 }
 /* innovation-section */
 .innovation-section {
-  padding: 80px 0;
+  position: relative;
+  padding-top: 200px;
   color: #0f3a2d;
+  background-color: var(--bg-color);
 }
 
 /* --- Left Content --- */
@@ -1493,6 +1498,9 @@ nav {
     justify-content: center;
   }
   /* graet section */
+  .great-section {
+    margin: 0 25px;
+  }
   .great-cards .row {
     flex-direction: column;
     align-items: center;
@@ -1669,6 +1677,7 @@ nav {
     height: 22px;
   }
   /* team-section */
+
   .slider-wrapper {
     padding: 30px;
   }

@@ -1,4 +1,6 @@
 const regNname = /^[a-zA-Z]+$/;
+const regPhone = new RegExp("^[0-9]{10}$");
+const regEmail = RegExp('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
 
 $(document).ready(function() {
     $("#firstName").keyup(firstNameErr);
@@ -37,7 +39,12 @@ $(document).ready(function() {
                 console.log(data);  
                 if (data.length < 1) {
                     $("#phoneErr").html("<p style='color:red'>* Required Field</p>");
-                } else {
+                }
+                else if(!regPhone.test(data))
+                    {
+                        $("#phoneErr").html("<p style='color:red'>* Invalid Phone Number</p>");
+                    }
+                else {
                     $("#phoneErr").html("");
                 }
             }
@@ -47,7 +54,12 @@ $(document).ready(function() {
                 console.log(data);
                 if (data.length < 1) {
                     $("#emailErr").html("<p style='color:red'>* Required Field</p>");
-                } else {
+                }
+                else if(!regEmail.test(data))
+                    {
+                        $("#emailErr").html("<p style='color:red'>* Invalid Email</p>");
+                    }
+                   else {
                     $("#emailErr").html("");
                 }
             }

@@ -209,7 +209,9 @@ nav {
 .breadcrumb span {
   color: rgba(255, 255, 255, 0.7);
 }
-
+.breadcrumb i{
+  font-size: 30px;
+}
 /* blog */
 .blog-section {
   padding: 80px 0;
@@ -260,7 +262,7 @@ nav {
 }
 
 .read-more {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
@@ -295,6 +297,7 @@ nav {
   gap: 12px;
   padding: 20px 0;
   color: #555;
+  cursor: pointer;
 }
 
 .footer-para {
@@ -303,8 +306,8 @@ nav {
 
 .contact-item i {
   color: #40916c;
-  font-size: 20px;
-  margin-top: 3px;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
 .links-list {
