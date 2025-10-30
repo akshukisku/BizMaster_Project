@@ -551,7 +551,10 @@ height: 12px;
   line-height: 1.8;
   margin-bottom: 40px;
 }
-
+#info{
+  /* background-color: red; */
+  margin-top: 30px;
+}
 /* Feature List */
 .feature-list {
   list-style: none;
